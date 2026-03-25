@@ -4,7 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ApiExceptionFilter } from './common/api-exception.filter';
 import { ProductModule } from './products/product.module'
-import { PurchaseModule } from './purchases/purchases.module'
+import { PurchaseModule } from './purchases/purchase.module'
 @Module({
   imports: [ProductModule,PurchaseModule],
   controllers: [AppController],
