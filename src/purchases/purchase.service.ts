@@ -6,6 +6,6 @@ export class PurchaseService {
   findAll() {
     const path = fs.readFileSync('data/purchases.json', 'utf8');
     const purchases = JSON.parse(path) as Purchase[];
-    return purchases
+    return purchases;
   }
 }

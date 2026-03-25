@@ -6,6 +6,6 @@ export class ProductService {
   findAll() {
     const path = fs.readFileSync('data/products.json', 'utf8');
     const product = JSON.parse(path) as IProduct[];
-    return product
+    return product;
   }
 }
