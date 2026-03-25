@@ -1,7 +1,7 @@
-export interface Product {
- id :string;
- name: string;
- price: number;
- stock : 10,
- description : string;
+export interface IProduct {
+  id: string;
+  name: string;
+  price: number;
+  stock: 10;
+  description: string;
 }
