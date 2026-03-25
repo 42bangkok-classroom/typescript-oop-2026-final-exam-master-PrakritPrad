@@ -4,12 +4,12 @@ import { Injectable } from '@nestjs/common';
 export class AppService {
   getHello() {
     return {
-      "success": true,
-      "data": {
-        "service": "purchase-api",
-        "version": "1.0.0"
+      success: true,
+      data: {
+        service: "purchase-api",
+        version: `1.0.0`
       },
-      "message": "Hello NestJS"
+      message: "Hello NestJS"
     };
   }
 }
