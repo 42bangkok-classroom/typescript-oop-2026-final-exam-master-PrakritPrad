@@ -8,4 +8,14 @@ export class PurchaseService {
     const purchases = JSON.parse(path) as Purchase[];
     return purchases;
   }
+  findOne(id: string) {
+    const users = this.findAll();
+    const user = users.find((u) => String(u.id) === id);
+
+    if (!user) {
+      return null;
+    }
+
+    return user;
+  }
 }
