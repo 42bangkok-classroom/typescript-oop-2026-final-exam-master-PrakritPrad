@@ -2,7 +2,7 @@ export interface Purchase {
   id: string;
   customerName: string;
   purchasesDate: string;
-  items : PurchaseItem[]
+  items : PurchaseItem[];
   totalPrice : number;
 }
 export interface PurchaseItem {
