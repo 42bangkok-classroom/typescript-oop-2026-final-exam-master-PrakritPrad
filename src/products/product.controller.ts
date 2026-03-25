@@ -11,6 +11,6 @@ export class ProductController {
       success: true,
       data: this.productService.findAll(),
       message: 'Fetched products successfully',
-    }
-}
+    };
+  }
 }

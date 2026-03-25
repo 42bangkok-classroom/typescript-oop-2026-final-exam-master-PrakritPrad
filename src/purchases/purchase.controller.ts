@@ -12,6 +12,5 @@ export class PurchaseController {
       data: this.purchaseService.findAll(),
       message: 'Fetched purchases successfully',
     };
-
   }
 }
