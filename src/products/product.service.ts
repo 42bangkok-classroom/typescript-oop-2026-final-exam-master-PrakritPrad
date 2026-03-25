@@ -5,10 +5,10 @@ import * as fs from 'fs';
 export class ProductService {
   findAll() {
     const path = fs.readFileSync('data/products.json', 'utf8');
-    const missions = JSON.parse(path) as IProduct[];
+    const product = JSON.parse(path) as IProduct[];
     return {
       success: true,
-      data: missions,
+      data: product,
       message: 'Fetched products successfully',
     };
   }
